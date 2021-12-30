@@ -36,7 +36,7 @@ For multiple articles, the sentences are first turned to embeddings and resultin
 
 ![tSNE](https://user-images.githubusercontent.com/75247817/147751106-2acecd28-eadc-43f7-b440-bb664f0454bf.png)
 
-An example plot projecting clusters of sentence embeddings in 384 dimensions in 2D via tSNE (outputs for each run can be visualized using either tSNE or PCA, using 'visualize_outputs' method of the 'ClusterSentenceEmbeddings' class in 'src/utils.py'
+An example plot projecting clusters of sentence embeddings in 384 dimensions in 2D via tSNE. Outputs for each run can be visualized using either tSNE or PCA, using 'visualize_outputs' method of the 'ClusterSentenceEmbeddings' class in 'src/utils.py'
 
 
 Web-app for better hyperparameter access is very likely in the future.
