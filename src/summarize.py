@@ -18,7 +18,6 @@ parser.add_argument(
 args = parser.parse_args()
 
 if args.custom:
-	USE_DEFAULT_CONFIG = False
 	articles = []
 	while True:
 		inp = input('>>> ')
