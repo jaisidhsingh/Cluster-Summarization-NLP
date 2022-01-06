@@ -1,6 +1,6 @@
-from .models import *
-from .utils import *
-from .config import CLEMB_KWARGS
+from models import *
+from utils import *
+from config import CLEMB_KWARGS
 from sklearn.cluster import AgglomerativeClustering
 import numpy as np
 import argparse
