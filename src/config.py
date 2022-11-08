@@ -1,4 +1,4 @@
-from load_exmaples import example_set
+from load_examples import example_set
 from utils import *
 from models import *
 from sklearn.cluster import AgglomerativeClustering
