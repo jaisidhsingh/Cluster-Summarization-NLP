@@ -141,12 +141,12 @@ class ClusterSentenceEmbeddings():
         return None
 
     def get_sentence_clusters(self):
-        cluster_outputs = self_cluster_outputs()
+        cluster_outputs = self.cluster_outputs()
         indiv_clusters = []
         chunk = ""
 
         for label in range(cluster_outputs['num_clusters']):
-            single_cluster = self.sentencesp[cluster_outputs['labels'] == label]
+            single_cluster = self.sentences[cluster_outputs['labels'] == label]
             for item in single_cluster:
                 chunk += item + " "
             indiv_clusters.append(chunk)
