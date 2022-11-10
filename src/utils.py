@@ -9,7 +9,15 @@ nltk.download('wordnet')
 from nltk.tokenize import sent_tokenize, word_tokenize
 import warnings
 from sklearn.cluster import AgglomerativeClustering
+from transformers import BartTokenizer, BartForConditionalGeneration
+from sentence_transformers import SentenceTransformer
 warnings.filterwarnings("ignore")
+
+EMBEDDING_MODEL = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+SUMMARIZATION_TOKENIZER = BartTokenizer.from_pretrained(
+    'facebook/bart-large-cnn')
+SUMMARIZATION_MODEL = BartForConditionalGeneration.from_pretrained(
+    'facebook/bart-large-cnn')
 
 def get_summary(articles, threshold):
 	sentences, words = make_data(articles)
