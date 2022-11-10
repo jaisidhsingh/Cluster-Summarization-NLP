@@ -37,8 +37,8 @@ def bart_summarize(
     device='cpu',
     num_beams=3,
     length_penalty=2.0,
-    max_length=200,
-    min_length=50,
+    max_length=30,
+    min_length=10,
     no_repeat_ngram_size=3,
 ):
 
