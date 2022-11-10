@@ -1,5 +1,5 @@
-from models import *
-from utils import *
+from .models import *
+from .utils import *
 from sklearn.cluster import AgglomerativeClustering
 import numpy as np
 import argparse
