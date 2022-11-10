@@ -1,9 +1,10 @@
-from .models import *
 from .utils import *
 from sklearn.cluster import AgglomerativeClustering
 import numpy as np
 import argparse
 import warnings
+from transformers import BartTokenizer, BartForConditionalGeneration
+from sentence_transformers import SentenceTransformer
 warnings.filterwarnings("ignore")
 
 def get_summary(articles, threshold):
