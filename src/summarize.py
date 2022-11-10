@@ -30,4 +30,4 @@ def get_summary(articles, threshold):
 		summary = bart_summarize(cluster, SUMMARIZATION_MODEL, SUMMARIZATION_TOKENIZER)
 		final_summary += summary + " "
 
-	print(final_summary)
+	return final_summary
