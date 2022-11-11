@@ -32,7 +32,7 @@ python3 summarize.py --custom True
 This starts a simple terminal input loop to enter the articles. Type 'exit' to submit and trigger summarization.
 
 ### Approach:
-For multiple articles, the sentences are first turned to embeddings and resulting clusters in the embedding space are extracted. Finally each cluster is summarized.
+For multiple articles, the sentences are first turned to embeddings and resulting clusters in the embedding space are extracted. Subsequently, each cluster is summarized.
 
 ![tSNE](https://user-images.githubusercontent.com/75247817/147751106-2acecd28-eadc-43f7-b440-bb664f0454bf.png)
 
